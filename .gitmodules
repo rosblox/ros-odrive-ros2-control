@@ -1,0 +1,3 @@
+[submodule "odrive_ros2_control"]
+	path = odrive_ros2_control
+	url = git@github.com:rosblox/odrive_ros2_control.git
