@@ -34,4 +34,4 @@ jobs:
           push: true
           build-args: |
             ROS_DISTRO=foxy
-          tags: ghcr.io/rosblox/ros:foxy-odrive-ros2-control
+          tags: ghcr.io/rosblox/ros-odrive-ros2-control:foxy
