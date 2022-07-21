@@ -18,23 +18,8 @@ WORKDIR /colcon_ws/src
 COPY odrive_ros2_control odrive_ros2_control 
 
 WORKDIR /colcon_ws
-RUN . /opt/ros/${ROS_DISTRO}/setup.sh && colcon build --symlink-install
+RUN . /opt/ros/${ROS_DISTRO}/setup.sh && colcon build
 
 WORKDIR /
 
 COPY ros_entrypoint.sh .
-
-
-
-
-
-# docker run ttyd with access to docker daemon and usb devices
-
-# docker compose stop service-name
-# docker compose rm service-name
-
-# odrivetool
-
-# docker compose up service-name -d
-# docker compose logs service-name
-# exit
